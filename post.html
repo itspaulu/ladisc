@@ -1,0 +1,13 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} — {{ site.title }}</title>
+</head>
+<body>
+  <article>
+    <h1>{{ page.title }}</h1>
+    <p><small>{{ page.date | date: "%d %b %Y" }} • Autor: {{ page.author }}</small></p>
+    {{ content }}
+  </article>
+</body>
+</html>
