@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: itspaulu/ladisc
+  branch: main
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Autor", name: "author", widget: "select", options: ["paulo","maria"]}
+      - {label: "Categorias", name: "categories", widget: "list", default: ["geral"]}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Imagem de capa", name: "thumbnail", widget: "image", required: false}
+      - {label: "Conteúdo", name: "body", widget: "markdown"}
