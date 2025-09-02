@@ -1,0 +1,16 @@
+title: "La Disc"
+description: "Um blog sobre cultura pop."
+author: "Paulo Rodrigues"
+email: "paulovpr2009@gmail.com"
+
+# URL do seu site (troque pelo seu endereço no GitHub Pages)
+url: "https://seuusuario.github.io"
+baseurl: "" # se for um repositório tipo seuusuario.github.io/site, coloque "/site"
+
+# Tema padrão do GitHub Pages
+theme: minima
+
+# Configurações opcionais
+markdown: kramdown
+plugins:
+  - jekyll-feed
